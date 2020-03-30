@@ -1,0 +1,14 @@
+string = 'apple'
+symbol = :apple
+
+string == symbol
+
+string.to_sym
+string.to_sym == symbol
+
+symbol.to_s
+string == symbol.to_s
+str = string + symbol.to_s
+
+string.respond_to?('include?')
+symbol.respond_to?(:include?)
